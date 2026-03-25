@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAR Creativa | Marketing Digital y Branding</title>
+    <meta name="description"
+        content="Hacemos que tu marca destaque con estrategias digitales, manejo de redes sociales, branding creativo y creación de contenido.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-text">IMAR <span class="highlight">Creativa</span></span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#portafolio" class="nav-link">Portafolio</a></li>
+                    <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-primary cta-header">Contáctanos</a>
+                <button class="menu-toggle" aria-label="Abrir menú" id="mobile-menu-btn">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg">
+                <!-- Fallback to image if video not load or preferred -->
+                <div class="hero-overlay"></div>
+                <img src="assets/hero-bg.jpg" alt="Marketing Digital Background" class="hero-image" id="hero-img">
+            </div>
+            <div class="container hero-content">
+                <span class="badge">Agencia de Marketing Digital</span>
+                <h1 class="hero-title">Hacemos que <br /> tu marca <span class="highlight-text">destaque</span></h1>
+                <p class="hero-subtitle">Estrategias digitales, branding y creación de contenido diseñados para
+                    conectar, inspirar y convertir.</p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary btn-large">Trabaja con nosotros <i
+                            class="ph ph-arrow-right"></i></a>
+                    <a href="#portafolio" class="btn btn-secondary btn-large">Ver proyectos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios" class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                    <p class="section-desc">Soluciones integrales para potenciar tu presencia digital y alcanzar tus
+                        objetivos comerciales.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-share-network"></i></div>
+                        <h3 class="service-title">Manejo de Redes</h3>
+                        <p class="service-text">Gestión estratégica de tus perfiles sociales para crear comunidad y
+                            aumentar el engagement con tu audiencia ideal.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-bezier-curve"></i></div>
+                        <h3 class="service-title">Diseño Gráfico</h3>
+                        <p class="service-text">Identidad visual impactante que comunica los valores de tu empresa y te
+                            diferencia de la competencia.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-camera"></i></div>
+                        <h3 class="service-title">Creación de Contenido</h3>
+                        <p class="service-text">Fotografía, video y copywriting persuasivo que cuenta la historia de tu
+                            marca de manera auténtica.</p>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Portafolio Section -->
+        <section id="portafolio" class="section portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portafolio Destacado</h2>
+                    <p class="section-desc">Explora algunos de nuestros proyectos más recientes y descubre lo que
+                        podemos lograr juntos.</p>
+                </div>
+
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="social">Social Media</button>
+                    <button class="filter-btn" data-filter="content">Contenido</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item" data-category="branding">
+                        <img src="assets/port-1.jpg" alt="Proyecto Branding" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>EcoBrand Identity</h4>
+                                <span>Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item" data-category="social">
+                        <img src="assets/port-2.jpg" alt="Proyecto Social Media" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Café Urbano</h4>
+                                <span>Social Media</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item" data-category="content">
+                        <img src="assets/port-3.jpg" alt="Proyecto Contenido" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lanzamiento Tech</h4>
+                                <span>Contenido / Video</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item" data-category="branding social">
+                        <img src="assets/port-4.jpg" alt="Proyecto Integral" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Moda Sostenible</h4>
+                                <span>Branding & Social</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item" data-category="content">
+                        <img src="assets/port-5.jpg" alt="Proyecto Fotográfico" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Gastronomía Local</h4>
+                                <span>Fotografía de Producto</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item" data-category="social">
+                        <img src="assets/port-6.jpg" alt="Proyecto Estrategia" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Gimnasio FitLife</h4>
+                                <span>Estrategia Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section id="multimedia" class="section media-section">
+            <div class="container container-sm">
+                <div class="media-box">
+                    <div class="video-container">
+                        <video src="assets/IMARC.mp4" class="video-thumbnail" controls autoplay muted loop playsinline
+                            style="object-fit: cover; background: #000;"></video>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros Section -->
+        <section id="nosotros" class="section about">
+            <div class="container">
+                <div class="about-content"
+                    style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <h3 class="about-subtitle">Pasión por la innovación y el diseño estratégico</h3>
+                    <p class="about-text">En IMAR Creativa somos un equipo multidisciplinario de mentes curiosas,
+                        creativos apasionados y estrategas digitales. Nuestra misión es transformar ideas en
+                        experiencias digitales memorables que conecten profundamente con las audiencias.</p>
+                    <p class="about-text">No solo creamos publicaciones bonitas, construimos marcas sólidas con
+                        propósito, voz propia y un impacto real en el mercado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactivo Modal (Quiz) -->
+        <section id="quiz-interactivo" class="quiz-section">
+            <div class="quiz-container">
+                <button type="button" class="quiz-close-modal-btn" id="close-quiz-btn" aria-label="Cerrar test"><i class="ph ph-x"></i></button>
+                <div class="section-header">
+                        <h2 class="section-title">¿Qué tipo de marca eres?</h2>
+                        <p class="section-desc">Descubre en 3 simples pasos qué estrategia de marketing digital necesita tu negocio en este momento.</p>
+                    </div>
+                    
+                    <div id="quiz-wrapper" class="quiz-wrapper">
+                        <!-- Questions will be injected here via JS, or hardcoded and toggled -->
+                        <div class="quiz-step active" data-step="1">
+                            <h3>1. ¿Cuál es tu principal objetivo?</h3>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="venta">
+                                    <span>Vender más</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="presencia">
+                                    <span>Tener presencia en redes</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="solida">
+                                    <span>Construir una marca sólida</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-step" data-step="2">
+                            <h3>2. ¿Qué tipo de contenido usas actualmente?</h3>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q2" value="nada">
+                                    <span>No uso contenido</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q2" value="ocasional">
+                                    <span>Publico ocasionalmente</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q2" value="constante">
+                                    <span>Tengo estrategia constante</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-step" data-step="3">
+                            <h3>3. ¿Qué buscas mejorar?</h3>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q3" value="alcance">
+                                    <span>Alcance</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q3" value="imagen">
+                                    <span>Imagen de marca</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q3" value="conversion">
+                                    <span>Conversión de clientes</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Result -->
+                        <div class="quiz-step result-step" id="quiz-result-container">
+                            <h3 id="quiz-result-title">Tu Perfil</h3>
+                            <div class="quiz-result-box">
+                                <h4 id="quiz-result-profile">Marca en Crecimiento</h4>
+                                <p id="quiz-result-text">Necesitas fortalecer tu presencia digital con contenido constante y estrategia.</p>
+                            </div>
+                            <a href="#contacto" class="btn btn-primary btn-block quiz-cta">Habla con nosotros</a>
+                            <button type="button" class="btn btn-secondary btn-block mt-3" id="quiz-restart-btn" style="margin-top: 15px;">Volver a intentar</button>
+                        </div>
+                    </div>
+
+                    <div class="quiz-actions" id="quiz-actions">
+                        <button type="button" class="btn btn-secondary" id="quiz-prev-btn" disabled>Atrás</button>
+                        <button type="button" class="btn btn-primary" id="quiz-next-btn">Siguiente</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="section-title text-left">¿Listo para impulsar tu marca?</h2>
+                        <p class="contact-desc">Déjanos tus datos y cuéntanos sobre tu proyecto. Nuestro equipo se
+                            pondrá en contacto contigo a la brevedad.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="ph ph-envelope-simple"></i>
+                                <span>imarcreativa@gmail.com</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="ph ph-phone"></i>
+                                <span>+52 618 333 7992</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="ph ph-map-pin"></i>
+                                <span>Durango,MX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="form">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" placeholder="Ej. Ana Pérez" required>
+                                <span class="error-msg">Por favor, ingresa tu nombre.</span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                                    <span class="error-msg">Ingresa un email válido.</span>
+                                </div>
+                                <div class="form-group half">
+                                    <label for="phone">Teléfono (opcional)</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+52 ...">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Cuéntanos sobre tu proyecto</label>
+                                <textarea id="message" name="message" rows="4" placeholder="¿Qué tienes en mente?..."
+                                    required></textarea>
+                                <span class="error-msg">Por favor, escribe un mensaje.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                Enviar Mensaje <i class="ph ph-paper-plane-tilt"></i>
+                            </button>
+                            <div class="success-msg" id="success-message">¡Mensaje enviado con éxito! Nos comunicaremos
+                                pronto.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-text">IMAR <span class="highlight">Creativa</span></span>
+                    </a>
+                    <p class="footer-text">Agencia de marketing digital enfocada en resultados reales y diseño que
+                        enamora.</p>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="javascript:void(0)" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="javascript:void(0)" aria-label="Tiktok"><i class="ph ph-tiktok-logo"></i></a>
+                        <a href="javascript:void(0)" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="javascript:void(0)" aria-label="Behance"><i class="ph ph-behance-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> IMAR Creativa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Assistant -->
+    <div class="chat-assistant-container">
+        <button id="chat-toggle-btn" class="chat-toggle-btn" aria-label="Abrir chat">
+            <i class="ph ph-chat-teardrop-dots"></i>
+        </button>
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <img src="assets/IMAR.png" alt="IMAR" class="chat-avatar"
+                        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGMkU5MyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiLz48L3N2Zz4='">
+                    <div>
+                        <h4>Asistente IMAR</h4>
+                        <span>En línea</span>
+                    </div>
+                </div>
+                <button id="chat-close-btn" class="chat-close-btn"><i class="ph ph-x"></i></button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    <p>¡Hola! 👋 Somos IMAR, ¿en qué podemos ayudarte?</p>
+                </div>
+            </div>
+            <form id="chat-form" class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." autocomplete="off" required>
+                <button type="submit" id="chat-submit-btn" aria-label="Enviar"><i class="ph ph-paper-plane-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating Quiz Button -->
+    <a href="javascript:void(0)" id="open-quiz-btn" class="floating-quiz-btn" aria-label="Ir al test interactivo">
+        <i class="ph ph-list-magnifying-glass"></i>
+        <span>Test de Marca</span>
+    </a>
+
+    <!-- App Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
